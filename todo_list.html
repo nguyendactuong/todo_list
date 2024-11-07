@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/todo_list.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="task-counts">
+            <span id="sum-count"></span>
+            <span id="completed-count"></span>
+            <span id="pending-count"></span>
+        </div>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Thêm vào một công việc">
+            <button type="submit">Thêm</button>
+        </form>
+        
+        <ul id="todo-list"></ul>
+        
+        <button id="delete-all">Xóa tất cả</button> <!-- Use an ID for easier reference -->
+    </div>
+    <script src="/todo_list.js"></script>
+</body>
+</html>

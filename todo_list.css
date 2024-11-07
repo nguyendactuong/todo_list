@@ -1,0 +1,178 @@
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa, #e5eff9);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4b5b66;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Task Counts Section */
+#task-counts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dfe3e8;
+}
+
+#task-counts span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Task Form */
+#todo-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#todo-input:focus {
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+button[type="submit"] {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #6b6ec7, #6c46c4);
+}
+
+/* Todo List Styling */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Task Styling */
+/* Task Item Styling */
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for tasks */
+#todo-list li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed Task Styling */
+.completed {
+    text-decoration: line-through;
+    color: #9ca3af; /* Gray color for completed tasks */
+    background-color: #d1e7fd; /* Light blue background for completed tasks */
+    border-left: 5px solid #64b5f6; /* Soft blue border for completed tasks */
+}
+
+/* Pending Task Styling */
+.pending {
+    background-color: #fef3c7; /* Soft yellow background for pending tasks */
+    border-left: 5px solid #f59e0b; /* Bright yellow border for pending tasks */
+}
+
+/* Button Styling */
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Complete Button Styling */
+.complete {
+    background-color: #34d399;
+    color: #fff;
+}
+
+.complete:hover {
+    background-color: #2bbd85;
+}
+
+/* Edit Button Styling */
+.edit {
+    background-color: #fbbf24;
+    color: #fff;
+}
+
+.edit:hover {
+    background-color: #e0a400;
+}
+
+/* Delete Button Styling */
+.delete {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+.delete:hover {
+    background-color: #d43535;
+}
+
+/* Delete All Button */
+#delete-all {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #f87171, #ef4444);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#delete-all:hover {
+    background: linear-gradient(135deg, #f45d5d, #d43535);
+    transform: scale(1.03);
+}
